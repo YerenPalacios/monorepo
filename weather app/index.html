@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div id="loading" class="loading">
+        <div class="lds-dual-ring"></div>
+        <p>Cargando...</p>
+    </div>
+    <section class="main">
+        <input type="checkbox"  id="toggle-search">
+        <div class="head">
+            <button> <label for="toggle-search">Search for places</label> </button>
+            <button><img src="icons/location.svg"></button>
+        </div>
+
+        <div class="weather-icon">
+            <div class="back">
+                <div class="cloud"><img src="icons/cloud.svg" alt=""></div>
+                <div class="cloud"><img src="icons/cloud.svg" alt=""></div>
+                <div class="cloud"><img src="icons/cloud.svg" alt=""></div>
+                <div class="cloud"><img src="icons/cloud.svg" alt=""></div>
+            </div>
+            <div class="main-icon">
+                <img id="actualIcon" src="icons/s.svg" alt="">
+            </div>
+            
+        </div>
+
+        <p class="number"><span id="actualTemp">0</span>°c</p>
+        <p id="condition" class="text">Shower</p>
+
+        <div class="foot">
+            <p id="today">○</p>
+            <p id="actualPlace" class="place"><img src="icons/place.svg"> Helashiki</p> 
+        </div>
+        
+        <div class="search">
+            <div class="close">
+                <label for="toggle-search" >
+                    <img src="icons/close.svg" >
+                </label> 
+            </div>
+            
+            <div id="searchBox" class="search-box">
+                <div class="input">
+                    <img src="icons/search.svg" alt="">
+                    <input placeholder="Search location" type="text">
+                </div>
+                <button>Search</button>
+            </div>
+            <div id="places" class="places">
+                <div class="place">
+                    <p>London</p>
+                    <img src="icons/more.svg">
+                </div>
+                <div class="place">
+                    <p>Madrid</p>
+                    <img src="icons/more.svg">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="content">
+        <div class="head">
+            <button class="actual">°C</button>
+            <button>°F</button>
+        </div>
+
+        <div id="forecast" class="week">
+            
+        </div>
+        <p>Today´s hightligthts</p>
+        <div class="today-hightligthts">
+            
+            <div class="card">
+                <p>Wind status</p>
+                <p class="data"><span id="actualWind" class="bigger">0</span>mph</p>
+                <p class="play"><img src="icons/play.svg"> <span id="actualWinDir">wsw</span></p>
+            </div>
+            <div class="card">
+                <p>Humidity</p>
+                <p class="data"><span id="actualHumidity" class="bigger">0</span>%</p>
+                <div class="progress">
+                    <div class="nums">
+                        <p>0</p>
+                        <p>50</p>
+                        <p>100</p>
+                    </div>
+                    <div class="bar">
+                        <div id="actualHumidityPer" class="data-bar"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <p>Visivility</p>
+                <p class="data"><span class="bigger" id="actualVis">0</span> km</p>
+            </div>
+            <div class="card">
+                <p>Air Pressure</p>
+                <p class="data"><span id="actualPresure" class="bigger">0</span> mb</p>
+            </div>
+        </div>
+        <div class="foot">created by <a href="#">Yeren Palacios</a> - devChallenges.io</div>
+    </section>
+    <script src="main.js"></script>
+    <!-- https://www.metaweather.com/api/ -->
+</body>
+</html>
