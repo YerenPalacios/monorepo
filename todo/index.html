@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link rel="shortcut icon" href="icons/done.svg" type="image/x-icon">
+    <title>#todo</title>
+</head>
+<body>
+    <h1><b>#todo</b></h1>
+    <div class="tabs">
+        <p id="all" class="selected">All</p>
+        <p id="active">Active</p>
+        <p id="completed">Completed</p>
+    </div>
+    <div id="page">
+        <div class="form">
+            <input type="text" placeholder="add details">
+            <button>Add</button>
+        </div>
+
+        <div id="allPage">done</div>
+            
+        <div id="activePage">no done</div>
+
+        <div id="completedPage">
+            borrar
+        </div>
+        
+        <button style="display: none;" class="deleteAll">
+            <img src="icons/trash.svg" >
+            <span>Delete all</span>    
+        </button>
+    </div>
+    <div class="foot">created by <a href="#">Yeren Palacios</a> - devChallenges.io</div>
+<script src="main.js"></script>
+</body>
+</html>
