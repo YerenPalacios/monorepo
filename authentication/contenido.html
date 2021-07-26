@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="icons/devchallenges.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/0b32f2b0be.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body class="contenido">
+  <header>
+    <div class="logo"></div>
+    <div class="user">
+      <div class="loading"><img src="icons/tenor.gif" alt="Cargando..."></div>
+      <img id="userPhoto2" src="https://i.pinimg.com/236x/f1/f5/15/f1f5153cabe32239c85842fb4d0ba3c8--ps.jpg" alt="fo">
+      <p id="userName2" class="user-name">Null</p>
+      <input id="toggleMenu" type="checkbox">
+      <label for="toggleMenu"><i class="fa fa-caret-down caret"></i></label>
+      <div class="menu">
+        <p><i class="fa fa-user"></i>My Profile</p>
+        <p><i class="fa fa-user-friends"></i>Group Chat</p>
+        <hr>
+        <p id="signOut"><i class="fa fa-sign-out-alt"></i>Logout</p>
+      </div>
+    </div>
+  </header>
+
+  
+    <h1 class="personalInfo" align="center">Personal info</h1>
+    <p align="center">Basic info, like your name and photo</p>
+  <div class="contenedor">
+    <div class="loading"><img src="icons/tenor.gif" alt="Cargando..."></div>
+    <div class="user-data data-show">
+      <div class="item head-item">
+        <div>
+          <h3>Profile</h3>
+          <p>Some info may be  visible to other people</p>
+        </div>
+        <button><a href="edit.html">Edit</a> </button>
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Photo</p>
+        <img id='userPhoto' src="https://i.pinimg.com/236x/f1/f5/15/f1f5153cabe32239c85842fb4d0ba3c8--ps.jpg" alt="">
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Name</p>
+        <p id="userName">Null</p>
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Bio</p>
+        <p id="userBio">Null</p>
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Phone</p>
+        <p id="userPhone">Null</p>
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Email</p>
+        <p id="userEmail">Null</p>
+      </div>
+      <hr>
+      <div class="item">
+        <p class="item-name">Password</p>
+        <p id="userPass">************</p>
+      </div>
+    </div>
+    
+  </div>
+  <div class="foot">
+    <p>created by <a href="#">Yeren Palacios</a></p>
+    <p>devChallenges.io</p>
+  </div>  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="main.js"></script>
+  
+</body>
+</html>

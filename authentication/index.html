@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="main.css">
+  <script src="https://kit.fontawesome.com/0b32f2b0be.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Authentication App</title>
+</head>
+<body>
+  <input type="checkbox" id="toggleForm">
+  
+  <form id="loginForm" class="form">
+    <div class="head"></div>
+    <h1>Login</h1>
+    <div class="input">
+      <i class="fa fa-envelope"></i>
+      <input id="loginEmail" placeholder="Email" type="text">
+    </div>
+    <div class="input">
+      <i class="fa fa-lock"></i>
+      <input id="loginPass" placeholder="Password" type="password">
+    </div>
+    <button id="loginButton">Login</button>
+    <p><span>or continue with these social profile</span></p>
+    <p class="icons">
+      <img id="loginGoogle" src="icons/Google.svg" alt="">
+      <img id="loginFacebook" src="icons/Facebook.svg" alt="">
+      <img id="loginTwiter" src="icons/Twitter.svg" alt="">
+      <img id="loginGithub" src="icons/Gihub.svg" alt="">
+    </p>
+    <p><span>Don´t have an account yet? <label for="toggleForm">Register</label></span></p>
+  </form>
+
+  <form id="regForm" class="form">
+    <div class="head"></div>
+    <h1>Join thousands of learners from around the world</h1>
+    <p>Master web development by making real-life projects. There are multiple paths for you to choose</p>
+    <div class="input">
+      <i class="fa fa-envelope"></i>
+      <input id="regEmail" placeholder="Email" type="text">
+    </div>
+    <div class="input">
+      <i class="fa fa-lock"></i>
+      <input id="regPass" placeholder="Password" type="password">
+    </div>
+    <button>Start coding now</button>
+    <p><span>or continue with these social profile</span></p>
+    <p class="icons">
+      <img id="regGoogle" src="icons/Google.svg" alt="">
+      <img id="regFacebook" src="icons/Facebook.svg" alt="">
+      <img id="regTwiter" src="icons/Twitter.svg" alt="">
+      <img id="regGithub" src="icons/Gihub.svg" alt="">
+    </p>
+    <p><span>Already a member? <label for="toggleForm">Login</label></span></p>
+  </form>
+
+
+  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="main.js"></script>
+  
+</body>
+</html>

@@ -17,7 +17,7 @@
         <input type="checkbox"  id="toggle-search">
         <div class="head">
             <button> <label for="toggle-search">Search for places</label> </button>
-            <button><img src="icons/location.svg"></button>
+            <button id="here"><img src="icons/location.svg"></button>
         </div>
 
         <div class="weather-icon">
@@ -32,8 +32,8 @@
             </div>
             
         </div>
-
-        <p class="number"><span id="actualTemp">0</span>°c</p>
+        
+        <p class="number" id="actualTemp"></p>
         <p id="condition" class="text">Shower</p>
 
         <div class="foot">
@@ -56,22 +56,17 @@
                 <button>Search</button>
             </div>
             <div id="places" class="places">
-                <div class="place">
-                    <p>London</p>
-                    <img src="icons/more.svg">
-                </div>
-                <div class="place">
-                    <p>Madrid</p>
-                    <img src="icons/more.svg">
-                </div>
+               
+                
             </div>
         </div>
     </section>
 
     <section class="content">
-        <div class="head">
-            <button class="actual">°C</button>
-            <button>°F</button>
+        <div id="grados" class="head">
+            <input type="checkbox" checked id="celcius">
+            <label for="celcius" class="actual">°C</label>
+            <label for="celcius">°F</label>
         </div>
 
         <div id="forecast" class="week">

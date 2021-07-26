@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="main.css">
+  <link rel="shortcut icon" href="icons/devchallenges.png" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/0b32f2b0be.js" crossorigin="anonymous"></script>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  
+</head>
+<body class="contenido">
+  <header>
+    <div class="logo"></div>
+    <div class="user">
+      <div class="loading"><img src="icons/tenor.gif" alt="Cargando..."></div>
+      <img id="userPhoto2" src="https://i.pinimg.com/236x/f1/f5/15/f1f5153cabe32239c85842fb4d0ba3c8--ps.jpg" alt="fo">
+      <p id="userName2" class="user-name">Null</p>
+      <input id="toggleMenu" type="checkbox">
+      <label for="toggleMenu"><i class="fa fa-caret-down caret"></i></label>
+      <div class="menu">
+        <p><i class="fa fa-user"></i>My Profile</p>
+        <p><i class="fa fa-user-friends"></i>Group Chat</p>
+        <hr>
+        <p id="signOut"><i class="fa fa-sign-out-alt"></i>Logout</p>
+      </div>
+    </div>
+  </header>
+
+  
+  <a href="contenido.html" class="go-back"><i class="fa fa-chevron-left"></i>Back</a>
+  <div class="contenedor edit-container">
+    <div class="loading"><img src="icons/tenor.gif" alt="Cargando..."></div>
+    <form id="updForm" class="user-data ">
+      <div class="item flex-item head-item">
+        <div>
+          <h3>Change Info</h3>
+          <p>Changes will be reflected to every services</p>
+        </div>
+      </div>
+      <hr>
+      <div class="item flex-item">
+        <input id="selectPhoto" type="file" accept="image/*">
+        <label for="selectPhoto" class="change-photo">
+          <i class="fa fa-camera"></i>
+          <img id='updPhoto' src="https://i.pinimg.com/236x/f1/f5/15/f1f5153cabe32239c85842fb4d0ba3c8--ps.jpg" alt="">
+        </label>
+        <h4>Change photo</h4>
+      </div>
+      <hr>
+      <div class="item">
+        <p>Name</p>
+        <div class="input">
+          <input id="updName" type="text" placeholder="Enter your name...">
+        </div>
+      </div>
+      <hr>
+      <div class="item">
+        <p>Bio</p>
+        <div class="input">
+          <textarea id="updBio" placeholder="Enter your bio..." id="" rows="2"></textarea>
+        </div>
+      </div>
+      <hr>
+      <div class="item">
+        <p>Phone</p>
+        <div class="input">
+          <input id="updPhone" type="text" placeholder="Enter your phone...">
+        </div>
+      </div>
+      <hr>
+      <div class="item">
+        <p>Email</p>
+        <div class="input">
+          <input id="updEmail" type="text" placeholder="Enter your email...">
+        </div>
+      </div>
+      <hr>
+      <div class="item">
+        <p>Password</p>
+        <div class="input">
+          <input id="updPass" type="text" placeholder="Enter your password...">
+        </div>
+        <br>
+      </div>
+    </form>
+  </div>
+  <br>
+  <button id="saveChanges">Save</button>
+  <div class="foot">
+    <p>created by <a href="#">Yeren Palacios</a></p>
+    <p>devChallenges.io</p>
+  </div>  
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.7.1/firebase-storage.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+      https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script src="main.js"></script>
+  
+</body>
+</html>
