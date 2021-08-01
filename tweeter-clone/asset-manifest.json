@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/static/css/main.94046db8.chunk.css",
-    "main.js": "/static/js/main.da3a3496.chunk.js",
-    "main.js.map": "/static/js/main.da3a3496.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ce99d4ee.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ce99d4ee.js.map",
-    "static/js/2.c526c905.chunk.js": "/static/js/2.c526c905.chunk.js",
-    "static/js/2.c526c905.chunk.js.map": "/static/js/2.c526c905.chunk.js.map",
-    "static/js/3.fcbc7a93.chunk.js": "/static/js/3.fcbc7a93.chunk.js",
-    "static/js/3.fcbc7a93.chunk.js.map": "/static/js/3.fcbc7a93.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.94046db8.chunk.css.map": "/static/css/main.94046db8.chunk.css.map",
-    "static/js/2.c526c905.chunk.js.LICENSE.txt": "/static/js/2.c526c905.chunk.js.LICENSE.txt",
-    "static/media/tweeter-small.1dee2d06.svg": "/static/media/tweeter-small.1dee2d06.svg"
+    "main.css": "/devChallenges/tweeter-clone/static/css/main.94046db8.chunk.css",
+    "main.js": "/devChallenges/tweeter-clone/static/js/main.da3a3496.chunk.js",
+    "main.js.map": "/devChallenges/tweeter-clone/static/js/main.da3a3496.chunk.js.map",
+    "runtime-main.js": "/devChallenges/tweeter-clone/static/js/runtime-main.ac1a0cc0.js",
+    "runtime-main.js.map": "/devChallenges/tweeter-clone/static/js/runtime-main.ac1a0cc0.js.map",
+    "static/js/2.c526c905.chunk.js": "/devChallenges/tweeter-clone/static/js/2.c526c905.chunk.js",
+    "static/js/2.c526c905.chunk.js.map": "/devChallenges/tweeter-clone/static/js/2.c526c905.chunk.js.map",
+    "static/js/3.fcbc7a93.chunk.js": "/devChallenges/tweeter-clone/static/js/3.fcbc7a93.chunk.js",
+    "static/js/3.fcbc7a93.chunk.js.map": "/devChallenges/tweeter-clone/static/js/3.fcbc7a93.chunk.js.map",
+    "index.html": "/devChallenges/tweeter-clone/index.html",
+    "static/css/main.94046db8.chunk.css.map": "/devChallenges/tweeter-clone/static/css/main.94046db8.chunk.css.map",
+    "static/js/2.c526c905.chunk.js.LICENSE.txt": "/devChallenges/tweeter-clone/static/js/2.c526c905.chunk.js.LICENSE.txt",
+    "static/media/tweeter-small.1dee2d06.svg": "/devChallenges/tweeter-clone/static/media/tweeter-small.1dee2d06.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ce99d4ee.js",
+    "static/js/runtime-main.ac1a0cc0.js",
     "static/js/2.c526c905.chunk.js",
     "static/css/main.94046db8.chunk.css",
     "static/js/main.da3a3496.chunk.js"
