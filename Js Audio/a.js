@@ -1,24 +1,24 @@
 const songs = [{
-    title: '「カワキヲアメク」',
-    subtitle: '美波「カワキヲアメク」MV',
-    url: '美波「カワキヲアメク」MV.mp3',
-    image: 'https://i.ytimg.com/vi/SzRlOJjssmc/maxresdefault.jpg'
+    title: 'Moonlight_Sonata',
+    subtitle: 'Beethoven',
+    url: 'Beethoven_-_Moonlight_Sonata_(FULL).mp3',
+    image: 'https://images3.alphacoders.com/100/thumbbig-100519.webp'
 },
 {
-    title: 'This_Game__by_Konomi_Suzuki',
-    subtitle: 'No_Game_No_Life_OP_Full__This_Game__by_Konomi_Suzuki',
-    url: 'No_Game_No_Life_OP_Full__This_Game__by_Konomi_Suzuki.mp3',
-    image: 'https://i1.sndcdn.com/artworks-000095555186-xb2y41-t500x500.jpg'
+    title: 'Moonlight_Sonata_3rd_Movement',
+    subtitle: 'Beethoven',
+    url: 'Beethoven_–_Moonlight_Sonata_3rd_Movement.mp3',
+    image: 'https://images8.alphacoders.com/793/thumbbig-793713.webp'
 },
 {
-    title: 'Added0',
+    title: 'Random 0',
     subtitle: 'Added0',
     url: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3',
     image: 'https://picsum.photos/800/800'
 },
 
 {
-    title: 'Added1',
+    title: 'Random 1',
     subtitle: 'Added1',
     url: 'https://www.soundhelix.com//examples/mp3/SoundHelix-Song-14.mp3',
     image: 'https://picsum.photos/800/810'
@@ -223,8 +223,65 @@ menu_visible.onclick = () => {
     songslist.visible ? songslist.hidde() : songslist.show()
 }
 
+// set color with localstorage
+const root = document.querySelector(':root')
 
-color_input.oninput = e =>{
-   let root = document.querySelector(':root')
-   root.style.setProperty('--main', e.target.value)
+const themes = {
+    light: {
+        '--main': '#255fff',
+        '--bg': '#efefef',
+        '--bg2': '#e8e8e8',
+        '--input-bg': '#cfcfcf',
+        '--main-shadow': '9px 8px 9px -5px #00000063, -7px -7px 16px -5px #fff',
+        '--button-shadow': '6px 6px 9px -5px #00000063, -7px -7px 16px -5px #fff',
+        '--input-shadow': '5px 5px 9px -6px #00000063 inset, -7px -7px 9px -5px #fff inset',
+        '--icon-brightness': 'brightness(0.95)',
+    },
+    dark: {
+        '--main': '#255fff',
+        '--bg': '#121212',
+        '--bg2': '#191919',
+        '--input-bg': '#232323',
+        '--main-shadow': '9px 8px 9px -5px #141414, -7px -7px 16px -5px #58585863',
+        '--button-shadow': '6px 6px 9px -5px #141414, -7px -7px 16px -5px #58585863',
+        '--input-shadow': '5px 5px 9px -6px #101010 inset, -7px -7px 9px -5px #58585863 inset',
+        '--icon-brightness': 'brightness(0.93) invert(1)',
+    }
 }
+
+
+const setMainColor = () => {
+    let main_color = localStorage.getItem('main-color')
+    main_color && main_color !== '' && (
+        root.style.setProperty('--main', main_color),
+        color_input.value = main_color
+    )
+}
+setMainColor()
+
+color_input.oninput = e => {
+    localStorage.setItem('main-color', e.target.value)
+    setMainColor()
+}
+
+
+const setTheme = ()=>{
+    let theme = localStorage.getItem('theme')
+    theme = theme && theme!==''? theme : 'light'
+
+    root.style.setProperty('--bg', themes[theme]['--bg'])
+    root.style.setProperty('--bg2', themes[theme]['--bg2'])
+    root.style.setProperty('--input-bg', themes[theme]['--input-bg'])
+    root.style.setProperty('--main-shadow', themes[theme]['--main-shadow'])
+    root.style.setProperty('--button-shadow', themes[theme]['--button-shadow'])
+    root.style.setProperty('--input-shadow', themes[theme]['--input-shadow'])
+    root.style.setProperty('--button-shadow', themes[theme]['--button-shadow'])
+    root.style.setProperty('--icon-brightness', themes[theme]['--icon-brightness'])
+}
+setTheme()
+
+theme_input.onchange = e =>{
+    localStorage.setItem('theme', e.target.checked?'dark':'light')
+    setTheme()
+}
+

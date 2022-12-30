@@ -1,13 +1,32 @@
 :root {
-    --main: #255fff
+    --main: #255fff;
+    --bg: #121212;
+    --bg2: #191919;
+    --input-bg: #232323;
+    --main-shadow: 9px 8px 9px -5px #141414, -7px -7px 16px -5px #58585863;
+    --button-shadow: 6px 6px 9px -5px #141414, -7px -7px 16px -5px #58585863;
+    --input-shadow: 5px 5px 9px -6px #101010 inset, -7px -7px 9px -5px #58585863 inset;
+    --icon-brightness: brightness(0.93) invert(1)
 }
+
+/* {
+    --main: #255fff;
+    --bg: #efefef;
+    --bg2: #e8e8e8;
+    --input-bg: #cfcfcf;
+    --main-shadow:  9px 8px 9px -5px #00000063, -7px -7px 16px -5px #fff;
+    --button-shadow: 6px 6px 9px -5px #00000063, -7px -7px 16px -5px #fff;
+    --input-shadow:5px 5px 9px -6px #00000063 inset, -7px -7px 9px -5px #fff inset;
+
+
+} */
 
 * {
     box-sizing: border-box
 }
 
 body {
-    background-color: #efefef;
+    background-color: var(--bg);
     color: #777;
     display: flex;
     justify-content: center;
@@ -23,13 +42,14 @@ button,
     border-radius: 50%;
     width: 65px;
     height: 65px;
-    background-color: #e8e8e8;
+    background-color: var(--bg2);
     cursor: pointer;
-    box-shadow: 6px 6px 9px -5px #00000063, -7px -7px 16px -5px #fff;
+    box-shadow: var(--button-shadow);
     transition: .2s;
 }
 
-button:active, .button:active{
+button:active,
+.button:active {
     transform: scale(.93);
 }
 
@@ -41,11 +61,11 @@ button:active, .button:active{
 .reproducer {
     z-index: 10;
     text-transform: uppercase;
-    background-color: #e8e8e8;
+    background-color: var(--bg2);
     width: 320px;
     border-radius: 5px;
     padding: 40px 25px;
-    box-shadow: 9px 8px 9px -5px #00000063, -7px -7px 16px -5px #fff;
+    box-shadow: var(--main-shadow)
 }
 
 header,
@@ -136,7 +156,7 @@ input[type=range]::-webkit-slider-runnable-track {
     width: 100%;
     height: 4px;
     cursor: pointer;
-    background: #cfcfcf;
+    background: var(--input-bg);
     border-radius: 5px;
 }
 
@@ -147,12 +167,11 @@ input[type=range]::-webkit-slider-thumb {
     border-radius: 50%;
     background: var(--main);
     cursor: pointer;
-
     transform: translateY(-40%);
 }
 
 input[type=range]:focus::-webkit-slider-runnable-track {
-    background: #cfcfcf;
+    background: var(--input-bg);
 }
 
 details {
@@ -197,11 +216,20 @@ summary {
     outline: none;
     border-radius: 4px;
     padding: 5px 10px;
-    box-shadow: 5px 5px 9px -6px #00000063 inset, -7px -7px 9px -5px #fff inset;
+    box-shadow: var(--input-shadow)
 }
 
 #songs_form input::placeholder {
     opacity: .8;
+}
+
+#songs_form button {
+    height: auto;
+    width: max-content;
+    border-radius: 4px;
+    font-size: 13px;
+    padding: 10px 15px;
+    margin-top: 10px;
 }
 
 #songs_form .bad::placeholder {
@@ -209,7 +237,7 @@ summary {
 }
 
 details {
-    box-shadow: 4px 4px 9px -5px #00000063, -7px -7px 16px -5px #fff;
+    box-shadow: var(--main-shadow);
     padding: 10px 15px;
     border-radius: 4px;
 }
@@ -271,7 +299,7 @@ details p {
     display: block;
     width: 20px;
     right: 0;
-    filter: brightness(0.95);
+    filter: var(--icon-brightness);
     opacity: .5;
 }
 
