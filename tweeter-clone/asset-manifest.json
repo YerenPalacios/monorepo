@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/devChallenges/tweeter-clone/static/css/main.94046db8.chunk.css",
-    "main.js": "/devChallenges/tweeter-clone/static/js/main.73bc2f39.chunk.js",
-    "main.js.map": "/devChallenges/tweeter-clone/static/js/main.73bc2f39.chunk.js.map",
-    "runtime-main.js": "/devChallenges/tweeter-clone/static/js/runtime-main.ac1a0cc0.js",
-    "runtime-main.js.map": "/devChallenges/tweeter-clone/static/js/runtime-main.ac1a0cc0.js.map",
-    "static/js/2.a342699f.chunk.js": "/devChallenges/tweeter-clone/static/js/2.a342699f.chunk.js",
-    "static/js/2.a342699f.chunk.js.map": "/devChallenges/tweeter-clone/static/js/2.a342699f.chunk.js.map",
-    "static/js/3.fcbc7a93.chunk.js": "/devChallenges/tweeter-clone/static/js/3.fcbc7a93.chunk.js",
-    "static/js/3.fcbc7a93.chunk.js.map": "/devChallenges/tweeter-clone/static/js/3.fcbc7a93.chunk.js.map",
-    "index.html": "/devChallenges/tweeter-clone/index.html",
-    "static/css/main.94046db8.chunk.css.map": "/devChallenges/tweeter-clone/static/css/main.94046db8.chunk.css.map",
-    "static/js/2.a342699f.chunk.js.LICENSE.txt": "/devChallenges/tweeter-clone/static/js/2.a342699f.chunk.js.LICENSE.txt",
-    "static/media/tweeter-small.1dee2d06.svg": "/devChallenges/tweeter-clone/static/media/tweeter-small.1dee2d06.svg"
+    "main.css": "/monorepo/tweeter-clone/static/css/main.94046db8.chunk.css",
+    "main.js": "/monorepo/tweeter-clone/static/js/main.73bc2f39.chunk.js",
+    "main.js.map": "/monorepo/tweeter-clone/static/js/main.73bc2f39.chunk.js.map",
+    "runtime-main.js": "/monorepo/tweeter-clone/static/js/runtime-main.ac1a0cc0.js",
+    "runtime-main.js.map": "/monorepo/tweeter-clone/static/js/runtime-main.ac1a0cc0.js.map",
+    "static/js/2.a342699f.chunk.js": "/monorepo/tweeter-clone/static/js/2.a342699f.chunk.js",
+    "static/js/2.a342699f.chunk.js.map": "/monorepo/tweeter-clone/static/js/2.a342699f.chunk.js.map",
+    "static/js/3.fcbc7a93.chunk.js": "/monorepo/tweeter-clone/static/js/3.fcbc7a93.chunk.js",
+    "static/js/3.fcbc7a93.chunk.js.map": "/monorepo/tweeter-clone/static/js/3.fcbc7a93.chunk.js.map",
+    "index.html": "/monorepo/tweeter-clone/index.html",
+    "static/css/main.94046db8.chunk.css.map": "/monorepo/tweeter-clone/static/css/main.94046db8.chunk.css.map",
+    "static/js/2.a342699f.chunk.js.LICENSE.txt": "/monorepo/tweeter-clone/static/js/2.a342699f.chunk.js.LICENSE.txt",
+    "static/media/tweeter-small.1dee2d06.svg": "/monorepo/tweeter-clone/static/media/tweeter-small.1dee2d06.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.ac1a0cc0.js",
